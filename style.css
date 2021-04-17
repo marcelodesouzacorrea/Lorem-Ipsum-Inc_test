@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 600px;
+    margin: 0 auto;
+}
+.topo{
+    margin-top: 5%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.topo h2{
+    color: rgb(39, 38, 38);
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 10px;
+}
+.topo button{
+    width:160px;
+    padding: 10px;
+    margin-right: 20px;
+    background-color: rgb(19, 177, 85);
+    color: aliceblue;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.topo button i{
+    margin-right: 5px;
+}
