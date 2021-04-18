@@ -84,4 +84,7 @@
                 //fechar a confirmação
                 mysqli_stmt_close($stmt);
     }        
+                //fecha a conexão
+            mysqli_close($link);
+    
 ?>
