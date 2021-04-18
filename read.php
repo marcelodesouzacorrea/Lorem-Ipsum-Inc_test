@@ -18,7 +18,16 @@
             $result = mysqli_stmt_get_result($stmt);
 
             if (mysqli_num_rows($result) == 1) {
-                
+/* Busca a linha do resultado como uma matriz associativa. Desde o conjunto de resultados
+ contém apenas uma linha, não precisamos usar o loop while*/
+             $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+            //  Recuperar valor de campo individual
+            $nome = $row["nome"];
+            $inicio = $row["inicio"];
+            $fim = $row["fim"];
+            $valor = $row["valor"];
+            $riscos = $row["riscos"];
+            $participantes = $row["participantes"];
             }
         }
     }
