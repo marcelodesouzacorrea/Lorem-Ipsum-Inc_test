@@ -39,5 +39,7 @@
     }
             // Fechar declaração
             mysqli_stmt_close($stmt);
+            // fechar a conexão
+            mysqli_close($link);
     }
 ?>
