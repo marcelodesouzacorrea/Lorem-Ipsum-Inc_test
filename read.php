@@ -28,7 +28,13 @@
             $valor = $row["valor"];
             $riscos = $row["riscos"];
             $participantes = $row["participantes"];
+            }else {
+            // URL não contém parâmetro de id válido. Redirecionar para a página de erro
+            header("location: error.php");
+            exit();
             }
+        }else {
+            echo "Ups! Algo deu errado. Por favor, tente novamente mais tarde.";
         }
     }
     }
