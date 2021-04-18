@@ -56,5 +56,15 @@
         } 
         
         // Verifique os erros de entrada antes de inserir no banco de dados
+        if (empty($name_err) && empty($inicio_err) && empty($fim_err) && empty($valor_err) && empty($riscos_err) && empty($participantes_err)) {
+        // instrução de inserção
+        $sql = "INSERT INTO listaprojetos (nome, inicio, fim, valor, riscos, participantes) VALUES (?, ?, ?, ?, ?, ?)";
+
+            if($stmt = mysqli_prepare($link, $sql)){
+                // Vincule as variáveis ​​à instrução preparada como parâmetros
+                mysqli_stmt_bind_param($stmt, "sss", $param_nome, $param_inicio, $param_fim, $param_valor, $param_riscos, $param_participantes);
+            }
+            # code...
+        }
         
 ?>
