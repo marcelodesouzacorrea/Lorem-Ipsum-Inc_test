@@ -63,6 +63,14 @@
             if($stmt = mysqli_prepare($link, $sql)){
                 // Vincule as variáveis ​​à instrução preparada como parâmetros
                 mysqli_stmt_bind_param($stmt, "sss", $param_nome, $param_inicio, $param_fim, $param_valor, $param_riscos, $param_participantes);
+
+                // Definir parâmetros
+                $param_nome = $nome;
+                $param_inicio = $inicio;
+                $param_fim = $fim;
+                $param_valor = $valor;
+                $param_riscos = $riscos;
+                $param_participantes = $participantes;
             }
             # code...
         }
