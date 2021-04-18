@@ -6,7 +6,7 @@
     width: 600px;
     margin: 0 auto;
 }
-.topo{
+.topo{border: 1px solid red;
     margin-top: 5%;
     margin-bottom: 3%;
     display: flex;
@@ -19,6 +19,7 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-left: 10px;
 }
+
 .topo button{
     width:160px;
     padding: 10px;
@@ -29,4 +30,23 @@
     outline: none;
     border: none;
     border-radius: 5px;
+}
+.topo-registro{
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.topo-registro h2{
+    color: rgb(39, 38, 38);
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.topo-registro p{
+    color: rgb(39, 38, 38);
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }

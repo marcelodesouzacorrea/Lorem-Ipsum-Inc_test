@@ -100,7 +100,10 @@
 </head>
 <body>
     <div class="container">
-    
+        <div class="topo-registro">
+            <h2>Registrar projetos</h2>
+            <p>Preencha este formulário e envie para adicionar o registro do projeto.</p>
+        </div>
     </div>
 </body>
 </html>
