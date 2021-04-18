@@ -47,3 +47,48 @@
         exit();
     }
 ?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem-Ipsum-Inc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ver registro</h1>
+
+        <div>
+            <label for="">Nome</label>
+            <p><b><?php echo $row['nome'];?></b></p>
+        </div>
+        <div>
+            <label for="">Inicio</label>
+            <p><b><?php echo $row['inicio'];?></b></p>
+        </div>
+        <div>
+            <label for="">Fim</label>
+            <p><b><?php echo $row['fim'];?></b></p>
+        </div>
+        <div>
+            <label for="">Valor</label>
+            <p><b><?php echo $row['valor'];?></b></p>
+        </div>
+        <div>
+            <label for="">Riscos</label>
+            <p><b><?php echo $row['riscos'];?></b></p>
+        </div>
+        <div>
+            <label for="">Participantes</label>
+            <p><b><?php echo $row['participantes'];?></b></p>
+        </div>
+        <p><a href="index.php" class="botao">Voltar</a></p>
+        </div>
+            </div>        
+        </div>
+    </div>
+</body>
+</html>
