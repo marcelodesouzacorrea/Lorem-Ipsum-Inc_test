@@ -86,7 +86,7 @@
     }        
                 //fecha a conexão
             mysqli_close($link);
-    
+
 ?>
 
 <!DOCTYPE html>
@@ -129,6 +129,12 @@
                 <input type="text" name="valor" class="form-control <?php echo (!empty($valor_err)) ? 'is invalid' : '';?>" value= "<?php echo $valor; ?>">
                             <span class="invalid-feedback"><?php echo $valor_err;?></span>
             </div>                
+
+            <div class="form-group">
+                <label>Riscos</label>
+                <input type="text" name="riscos" class="form-control <?php echo (!empty($riscos_err)) ? 'is invalid' : '';?>" value= "<?php echo $riscos; ?>">
+                            <span class="invalid-feedback"><?php echo $riscos_err;?></span>
+            </div>
 
              <div class="form-group">
                 <label>Participantes</label>
