@@ -56,4 +56,17 @@
         } else{
             $participantes = $input_participantes;
         } 
+        // Verifique os erros de entrada antes de inserir no banco de dados
+        if (empty($name_err) && empty($inicio_err) && empty($fim_err) && empty($valor_err) && empty($riscos_err) && empty($participantes_err)) {
+            // instrução de inserção
+            $sql = "UPDATE listaprojetos SET nome=?, inicio=?, fim=?, valor=?, riscos=?, participantes=?;
+
+        if($stmt = mysqli_prepare($link, $sql)){
+                
+            mysqli_stmt_bind_param($stmt, "i", $param_id);
+            }
+            // configura parametro
+
+        
+              
 ?>
