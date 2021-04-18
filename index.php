@@ -12,7 +12,7 @@
     <div class="container">
         <div class="topo">
             <h2>Lorem Ipsum Inc</h2>
-            <a href=""><button><i class="fa fa-plus"></i>Adicionar projeto</button></a>
+            <a href="create.php"><button><i class="fa fa-plus"></i>Adicionar projeto</button></a>
         </div>
     <?php
     //  incluindo o arquivo config.php
