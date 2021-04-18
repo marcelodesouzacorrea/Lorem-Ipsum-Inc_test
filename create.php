@@ -72,7 +72,14 @@
                 $param_riscos = $riscos;
                 $param_participantes = $participantes;
             }
-            # code...
+                // Tenta executar a instrução preparada
+                if (mysqli_stmt_execute($stmt)) {
+                // Registros criados com sucesso. Redirecionar para a página de destino
+                header("location: index.php");
+                exit();
+                }else{
+                    echo "Algo deu errado. Por favor, tente novamente mais tarde.";
+                }
         }
         
 ?>
