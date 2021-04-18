@@ -5,5 +5,10 @@
     require_once "config.php";        
     // Prepare uma declaração selecionada        
     $sql = "SELECT * FROM listaprojetos WHERE id = ?";
+
+    if ($stmt = mysqli_prepare($link, $sql)) {
+        
+        mysqli_stmt_bind_param($stmt, "i", $param_id);
+    }
     }
 ?>
