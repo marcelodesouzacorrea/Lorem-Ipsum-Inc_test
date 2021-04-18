@@ -41,5 +41,9 @@
             mysqli_stmt_close($stmt);
             // fechar a conexão
             mysqli_close($link);
+    }else {
+        // O URL não contém o parâmetro id. Redirecionar para a página de erro
+        header("location: error.php");
+        exit();
     }
 ?>
