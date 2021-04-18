@@ -12,6 +12,15 @@
 
         // configura os parametros
         $param_id = trim($_GET["id"]);
+
+        // Tenta executar a instrução preparada
+        if (mysqli_stmt_execute($stmt)) {
+            $result = mysqli_stmt_get_result($stmt);
+
+            if (mysqli_num_rows($result) == 1) {
+                
+            }
+        }
     }
     }
 ?>
