@@ -81,5 +81,7 @@
                     echo "Algo deu errado. Por favor, tente novamente mais tarde.";
                 }
         }
-        
+                //fechar a confirmação
+                mysqli_stmt_close($stmt);
+    }        
 ?>
