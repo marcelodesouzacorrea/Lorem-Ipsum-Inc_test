@@ -104,6 +104,45 @@
             <h2>Registrar projetos</h2>
             <p>Preencha este formulário e envie para adicionar o registro do projeto.</p>
         </div>
+        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
+            
+            <div class="form-group">
+                <label>Nome</label>
+                <input type="text" name="nome" class="form-control <?php echo (!empty($nome_err)) ? 'is invalid' : '';?>" value= " <?php echo $nome; ?>">
+                            <span class="invalid-feedback"><?php echo $nome_err;?></span>
+            </div>                
+            
+            <div class="form-group">
+                <label>Inicio do Projeto</label>
+                <input type="text" name="inicio" class="form-control <?php echo (!empty($inicio_err)) ? 'is invalid' : '';?>" value= " <?php echo $inicio; ?>">
+                            <span class="invalid-feedback"><?php echo $inicio_err;?></span>
+            </div>                
+            
+            <div class="form-group">
+                <label>Fim do Projeto</label>
+                <input type="text" name="fim" class="form-control <?php echo (!empty($fim_err)) ? 'is invalid' : '';?>" value= " <?php echo $fim; ?>">
+                            <span class="invalid-feedback"><?php echo $fim_err;?></span>
+            </div>                
+
+            <div class="form-group">
+                <label>Valor</label>
+                <input type="text" name="valor" class="form-control <?php echo (!empty($valor_err)) ? 'is invalid' : '';?>" value= "<?php echo $valor; ?>">
+                            <span class="invalid-feedback"><?php echo $valor_err;?></span>
+            </div>                
+
+             <div class="form-group">
+                <label>Participantes</label>
+                <input type="text" name="participantes" class="form-control <?php echo (!empty($participantes_err)) ? 'is invalid' : '';?>" value= "<?php echo $participantes; ?>">
+                            <span class="invalid-feedback"><?php echo $participantes_err;?></span>
+            </div>   
+
+                <input type="submit" class='botao' value="submit">    
+                <a href="index.php" class="btn-secondary">Cancelar</a>                  
+            
+                </form>
+                </div>
+            </div>        
+        </div>
     </div>
 </body>
 </html>
